@@ -18,6 +18,7 @@ class RestaurantServiceTest {
             restaurant = service.addRestaurant("Amelie's cafe", "Chennai", openingTime, closingTime);
             restaurant.addToMenu("Sweet corn soup", 119);
             restaurant.addToMenu("Vegetable lasagne", 269);
+            restaurant.addToMenu("Eggplant", 300);
         }
 
 
@@ -63,4 +64,5 @@ class RestaurantServiceTest {
         assertEquals(initialNumberOfRestaurants + 1,service.getRestaurants().size());
     }
     //<<<<<<<<<<<<<<<<<<<<ADMIN: ADDING & REMOVING RESTAURANTS>>>>>>>>>>>>>>>>>>>>>>>>>>
+
 }
